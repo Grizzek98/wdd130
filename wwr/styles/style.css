@@ -2,7 +2,7 @@
     max-width: 1600px;
     margin: 0 auto;
 }
-nav a, #hero-msg h1, #hero-msg h4, .button-box, main section {
+#hero-msg h1, #hero-msg h4, .button-box, main section {
     text-align: center;
 }
 #background {
@@ -11,37 +11,58 @@ nav a, #hero-msg h1, #hero-msg h4, .button-box, main section {
 }
 body {
     background-color: #CBD0E2;
+    font-family: Candara, Futura, Calibri;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+#logo_link {
+    padding-top: 5px;
 }
 nav {
     background-color: #494850;
+    padding: 10px;
+    /* margin-top: 20px; */
 }
 nav a {
     text-decoration: none;
     color: #63B995;
+    text-align: center;
+    padding-left: 40px;
 }
 nav a:hover {
     color: #CA895F;
-    background-color: #EBD2C2;
+    /* background-color: #EBD2C2; */
 }
 #hero-msg {
     background-color: #E0BCA3;
+    padding-bottom: 20px;
 }
 .book, .join {
     text-decoration: none;
     color: #414E76;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #909CC2;
+
 }
 .book:hover, .join:hover {
-    color: #494850;
-    background-color: #909CC2;
+    color: #E0BCA3;
 }
 .msg {
     background-color: #E0BCA3;
+    line-height: 1.5em;
+    padding: 35px;
 }
 header {
     background-color: #ABD9C6;
 }
 footer {
     background-color: #494850;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer p {
     font-size: 1.2em;
@@ -54,7 +75,10 @@ footer a {
 }
 footer a:hover {
     color: #CA895F;
-    background-color: #EBD2C2;
+    /* background-color: #EBD2C2; */
+}
+footer .social img {
+    padding-top: 15px;
 }
 .msg h2, .msg p {
     color: #494850;
@@ -62,9 +86,37 @@ footer a:hover {
 h1, h4 {
     color: #494850;
 }
-.logo, .icon {
+h2 {
+    margin: 0;
+}
+.logo {
     width: 80px;
+    padding: 10px;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
+}
+.home-title, .msg h2 {
+    font-family: 'Arial Black', 'Times New Roman', Cambria;
+    margin-top: 10px;
+}
+.home-title {
+    font-size: 2em;
+}
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #494850;
+}
+main section img {
+    box-sizing: border-box;
 }
