@@ -2,7 +2,7 @@
     max-width: 1600px;
     margin: 0 auto;
 }
-#hero-msg h1, #hero-msg h4, .button-box, main section {
+#hero-msg h1, #hero-msg h4, .button-box, main section, #banner-msg h1, #banner-msg h4 {
     text-align: center;
 }
 #background {
@@ -38,7 +38,7 @@ nav a:hover {
     color: #CA895F;
     /* background-color: #EBD2C2; */
 }
-.book, .join {
+.book, .join, .contact {
     text-decoration: none;
     color: #414E76;
     font-size: 18px;
@@ -98,14 +98,14 @@ h2 {
     width: 80px;
     padding-top: 10px;
 }
-#hero-img {
+#hero-img, #banner-img {
     width: 100%;
 }
-.home-title, .msg h2 {
+.home-title, .faqs-title, .contactus-title .msg h2 {
     font-family: 'Arial Black', 'Times New Roman', Cambria;
     margin-top: 10px;
 }
-.home-title {
+.home-title, .faqs-title {
     font-size: 2em;
 }
 .home-grid {
@@ -130,6 +130,7 @@ h2 {
 #background {
     grid-column: 1/11;
     grid-row: 4/9;
+    z-index: -1;
 }
 .msg p {
     font-size: .8em;
@@ -178,6 +179,73 @@ main section img {
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
+}
+
+#banner {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#banner-msg {
+    background-color: #E0BCA3;
+    padding-bottom: 20px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 5px;
+}
+#banner-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+.faqs-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.faq1, .faq2, .faq3, .faq4, .faq5 {
+    background-color: #ABD9C6;
+    margin: 4em;
+    margin-bottom: 7em;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 5px;
+    grid-column: 1/4
+}
+.answer {
+    padding: 2em;
+    text-align: left;
+}
+.faq1 {
+    margin-top: -100px;
+    grid-row: 1/2;
+}
+.faq2 {
+    margin-top: -100px;
+    grid-row: 2/3;
+}
+.faq3 {
+    margin-top: -100px;
+    grid-row: 3/4;
+}
+.faq4 {
+    margin-top: -100px;
+    grid-row: 4/5;
+}
+.faq5 {
+    margin-top: -100px;
+    grid-row: 5/6;
+}
+.contactus-banner {
+    background-color: #E0BCA3;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    padding-bottom: 1em;
+    margin-top: -100px;
+    margin-left: 4em;
+    margin-right: 4em;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 900px) {
