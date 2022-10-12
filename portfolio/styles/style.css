@@ -1,0 +1,17 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 5em auto;
+}
+header a img {
+    width: 5em;
+}
+nav {
+    background-color: #798086;
+    border-radius: 10px;
+}
