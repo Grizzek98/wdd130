@@ -2,7 +2,7 @@
     max-width: 1600px;
     margin: 0 auto;
 }
-#hero-msg h1, #hero-msg h4, .button-box, main section, #banner-msg h1, #banner-msg h4 {
+#hero-msg h1, #hero-msg h4, .button-box, main section, #banner-msg h1, #banner-msg h4, #contact-banner-msg h1, #contact-banner-msg h4 {
     text-align: center;
 }
 #background {
@@ -98,14 +98,14 @@ h2 {
     width: 80px;
     padding-top: 10px;
 }
-#hero-img, #banner-img {
+#hero-img, #banner-img, #contact-banner-img {
     width: 100%;
 }
 .home-title, .faqs-title, .contactus-title .msg h2 {
     font-family: 'Arial Black', 'Times New Roman', Cambria;
     margin-top: 10px;
 }
-.home-title, .faqs-title {
+.home-title, .faqs-title, .contact-title {
     font-size: 2em;
 }
 .home-grid {
@@ -246,6 +246,78 @@ main section img {
     margin-right: 4em;
     box-shadow: 5px 5px 10px #6f7364;
     border-radius: 5px;
+}
+
+#contact-banner {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#contact-banner-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#contact-banner-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+#contact-banner-msg {
+    background-color: #E0BCA3;
+    padding-bottom: 20px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 5px;
+}
+.contactus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+form {
+    background-color: #ABD9C6;
+    margin: 4em;
+    margin-bottom: -2em;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 5px;
+    grid-column: 2/5;
+    padding: 1em;
+    margin-right: 9em;
+    margin-left: 9em;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+form li + li {
+    margin-top: 1em;
+}
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+input:focus,textarea:focus {
+    border-color: #000;
+}
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+#feedback {
+    /* position: absolute; */
+    /* background-color: antiquewhite;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em; */
+    grid-column: 2/5;
+}
+.moveDown {
+    margin-top: 3em;
 }
 
 @media screen and (max-width: 900px) {
