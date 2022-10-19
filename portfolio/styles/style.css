@@ -58,7 +58,7 @@ footer {
     padding: 0em 2em;
     margin-top: 5em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     /* justify-content: space-around; */
     align-items: center;
     justify-items: center;
@@ -66,9 +66,6 @@ footer {
 footer p {
     color: white;
     text-decoration: none;
-}
-footer div {
-    text-align: center;
 }
 footer a {
     color: white;
@@ -78,10 +75,11 @@ footer a:hover {
     color: whitesmoke;
     background-color: #556F7A;
     border-radius: 10px;
+    transform: scale(1.1);
 }
 
 /* main stuff */
-.home-grid {
+.main-grid {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     text-align: center;
@@ -89,53 +87,51 @@ footer a:hover {
     justify-items: center;
     place-items: center;
 }
-#home-title {
+#home-title, #asteroid-title, #besquare-title {
     margin-top: 2em;
     grid-column: 1/5;
     grid-row: 1/2;
     font-size: 60px;
 }
-#homeimg1sec {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    /* align-items: center;
-    justify-content: center; */
-}
-#homeimg1 {
+#homeimg1, #asteroidimg1, #asteroidimg2 {
     width: 90%;
     align-self: center;
     border: 10px solid #494850;
     box-shadow: 5px 5px 10px #6f7364;
 }
-#homeimg1:hover {
+#homep1, #homep2, #asteroidp1, #asteroidp2, #asteroidp3 {
+    background-color: rgba(46, 97, 113, 0.3);
+    margin-left: 3em;
+    margin-right: 3em;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+#homep1 p, #homep2 p, #asteroidp1 p, #asteroidp2 p, #asteroidp3 p {
+    color: black;
+    padding: 2em;
+    text-align: left;
+}
+#homeimg1:hover, #homeimg2:hover, #asteroidimg1:hover, #asteroidimg2:hover {
     transform: scale(1.1);
+}
+#contact-section {
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
 
+/* home specific */
+#homeimg1sec {
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 #homep1 {
     grid-column: 2/5;
     grid-row: 2/3;
-    background-color: rgba(46, 97, 113, 0.3);
-    margin-left: 3em;
-    margin-right: 3em;
-    box-shadow: 5px 5px 10px #6f7364;
-}
-#homep1 p {
-    color: black;
-    padding: 2em;
-    text-align: left;
 }
 #homep2 {
     grid-column: 1/4;
     grid-row: 3/4;
-    background-color: rgba(46, 97, 113, 0.3);
-    margin-left: 3em;
-    margin-right: 3em;
-    box-shadow: 5px 5px 10px #6f7364;
-}
-#homep2 p {
-    color: black;
-    padding: 2em;
-    text-align: left;
 }
 #homeimg2sec {
     grid-column: 4/5;
@@ -148,39 +144,86 @@ footer a:hover {
     border: 10px solid #494850;
     box-shadow: 5px 5px 10px #6f7364;
 }
-#homeimg2:hover {
-    transform: scale(1.1);
-}
+
+/* contact stuff */
 #contact-title {
-    grid-column: 1/5;
+    grid-column: 1/6;
     grid-row: 4/5;
 }
 #phone {
-    grid-column: 1/2;
+    position: relative;
+    grid-column: 2/3;
     grid-row: 5/6;
     background-color: rgba(85, 111, 122, 0.2);
     border-radius: 1em;
     width: 100%;
     color: black;
-    margin-left: 5em;
+    right: 2em;
 }
 #email {
-    grid-column: 2/4;
+    position: relative;
+    grid-column: 3/4;
     grid-row: 5/6;
     background-color: rgba(85, 111, 122, 0.2);
     border-radius: 1em;
-    width: 50%;
+    width: 100%;
     color: black;
 }
 #linkedin {
+    position: relative;
     grid-column: 4/5;
     grid-row: 5/6;
     background-color: rgba(85, 111, 122, 0.2);
     border-radius: 1em;
     width: 100%;
     color: black;
-    margin-right: 5em;
+    left: 2em;
 }
 #linkedin a {
     color: black;
+}
+
+/* asteroid specific */
+#asteroidp1 {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    margin-bottom: 2em;
+}
+#asteroidimg1sec {
+    display: flex;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-content: center;
+    left: 10em;
+}
+#asteroidimg2sec {
+    display: flex;
+    position: relative;
+    grid-column: 4/5;
+    grid-row: 3/4;
+    justify-content: center;
+    right: 10em;
+}
+#asteroidimg1 {
+    width: 125%;
+    align-self: center;
+}
+#asteroidimg2 {
+    width: 125%;
+    align-self: center;
+}
+#asteroidp2 {
+    grid-column: 1/5;
+    grid-row: 4/5;
+    margin-top: 2em;
+}
+#asteroidp3 {
+    grid-column: 2/4;
+    grid-row: 5/6;
+    margin-top: 4em;
+}
+#github-link-asteroid {
+    grid-column: 2/4;
+    grid-row: 6/7;
 }
