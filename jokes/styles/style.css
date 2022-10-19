@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(228, 233, 239);
+}
+#home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main-title {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-bottom: 5em;
+    background-color: rgba(46, 97, 113, 0.7);
+    border-radius: 1em;
+    padding: 1em;
+    border: 5px solid #494850;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+h1 {
+    font-size: 30px;
+}
+#instructions {
+    font-size: 22px;
+    margin-bottom: 3em;
+}
+#line-break {
+    height: 1px;
+    background: black;
+}
+#disclaimer {
+    font-size: 15px;
+}
+
+#joke-tile {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #798086;
+    border-radius: 1em;
+    padding: 1em;
+    border: 5px solid #494850;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+#advice-tile {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-color: #798086;
+    border-radius: 1em;
+    padding: 1em;
+    border: 5px solid #494850;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+#joke-button {
+    color: white;
+    background-color: #2E6171;
+    padding: 10px;
+}
+#advice-button {
+    color: white;
+    background-color: #2E6171;
+    padding: 10px;
+}
