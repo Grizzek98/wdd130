@@ -237,7 +237,7 @@ footer a:hover {
 /* jokes stuff */
 #jokes-grid {
     display: grid;
-    grid-template-columns: minmax(400px, auto) 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -320,32 +320,34 @@ h1 {
 }
 #jokes-phone {
     position: relative;
-    grid-column: 1/2;
-    grid-row: 5/6;
-    background-color: rgba(85, 111, 122, 0.2);
-    border-radius: 1em;
-    width: 100%;
-    color: black;
-    right: 2em;
-}
-#jokes-email {
-    position: relative;
     grid-column: 2/3;
     grid-row: 5/6;
     background-color: rgba(85, 111, 122, 0.2);
     border-radius: 1em;
     width: 100%;
     color: black;
+    /* right: 15em; */
 }
-#jokes-linkedin {
+#jokes-email {
     position: relative;
-    grid-column: 3/4;
-    grid-row: 5/6;
+    grid-column: 2/3;
+    grid-row: 6/7;
     background-color: rgba(85, 111, 122, 0.2);
     border-radius: 1em;
     width: 100%;
     color: black;
-    left: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+#jokes-linkedin {
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 7/8;
+    background-color: rgba(85, 111, 122, 0.2);
+    border-radius: 1em;
+    width: 100%;
+    color: black;
+    /* left: 15em; */
 }
 .section-title {
     font-size: 40px;
