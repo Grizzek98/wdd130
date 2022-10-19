@@ -87,11 +87,12 @@ footer a:hover {
     justify-items: center;
     place-items: center;
 }
-#home-title, #asteroid-title, #besquare-title {
+#home-title, #asteroid-title, #besquare-title, .jokes-title {
     margin-top: 2em;
     grid-column: 1/5;
     grid-row: 1/2;
     font-size: 60px;
+    font-family: "Bodoni MT", Lucida Bright, Georgia, Garamond;
 }
 #homeimg1, #asteroidimg1, #asteroidimg2 {
     width: 90%;
@@ -105,10 +106,11 @@ footer a:hover {
     margin-right: 3em;
     box-shadow: 5px 5px 10px #6f7364;
 }
-#homep1 p, #homep2 p, #asteroidp1 p, #asteroidp2 p, #asteroidp3 p {
+#homep1 p, #homep2 p, #asteroidp1 p, #asteroidp2 p, #asteroidp3 p, .instructions p, #joke-tile p, #advice-tile p {
     color: black;
     padding: 2em;
     text-align: left;
+    font-family: Helvetica, Verdana, Calibri, Arial;
 }
 #homeimg1:hover, #homeimg2:hover, #asteroidimg1:hover, #asteroidimg2:hover {
     transform: scale(1.1);
@@ -149,6 +151,7 @@ footer a:hover {
 #contact-title {
     grid-column: 1/6;
     grid-row: 4/5;
+    font-family: "Bodoni MT";
 }
 #phone {
     position: relative;
@@ -181,6 +184,9 @@ footer a:hover {
 }
 #linkedin a {
     color: black;
+}
+#phone h4, #email h4, #linkedin h4, #phone p, #email p, #linkedin p {
+    font-family: Helvetica;
 }
 
 /* asteroid specific */
@@ -226,4 +232,113 @@ footer a:hover {
 #github-link-asteroid {
     grid-column: 2/4;
     grid-row: 6/7;
+}
+
+/* jokes stuff */
+#jokes-grid {
+    display: grid;
+    grid-template-columns: minmax(auto, 300px, auto) 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin-top: 5em; */
+}
+.jokes-title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.instructions {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-bottom: 5em;
+    background-color: rgba(46, 97, 113, 0.3);
+    /* padding: 1em; */
+    box-shadow: 5px 5px 10px #6f7364;
+    min-width: 100px;
+}
+h1 {
+    font-size: 30px;
+}
+.instructions {
+    font-size: 22px;
+    margin-bottom: 3em;
+}
+#line-break {
+    height: 1px;
+    background: black;
+}
+#disclaimer {
+    font-size: 15px;
+}
+#joke-tile {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: rgba(85, 111, 122, 0.2);
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin-bottom: 5em;
+    margin: 2em;
+}
+#advice-tile {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: rgba(85, 111, 122, 0.2);
+    border-radius: 1em;
+    padding: 1em;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin: 2em;
+}
+#joke-button {
+    color: white;
+    background-color: #2E6171;
+    padding: 10px;
+}
+#advice-button {
+    color: white;
+    background-color: #2E6171;
+    padding: 10px;
+}
+.instructions p, #joke-tile p, #advice-tile p {
+    text-align: center;
+}
+#jokes-contact-section {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+#jokes-contact-title {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    font-family: "Bodoni MT";
+}
+#jokes-phone {
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 5/6;
+    background-color: rgba(85, 111, 122, 0.2);
+    border-radius: 1em;
+    width: 100%;
+    color: black;
+    right: 2em;
+}
+#jokes-email {
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    background-color: rgba(85, 111, 122, 0.2);
+    border-radius: 1em;
+    width: 100%;
+    color: black;
+}
+#jokes-linkedin {
+    position: relative;
+    grid-column: 3/4;
+    grid-row: 5/6;
+    background-color: rgba(85, 111, 122, 0.2);
+    border-radius: 1em;
+    width: 100%;
+    color: black;
+    left: 2em;
 }
