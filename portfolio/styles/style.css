@@ -294,10 +294,16 @@ h1 {
     background-color: #2E6171;
     padding: 10px;
 }
+#joke-button:hover {
+    transform: scale(1.1);
+}
 #advice-button {
     color: white;
     background-color: #2E6171;
     padding: 10px;
+}
+#advice-button:hover {
+    transform: scale(1.1);
 }
 .instructions p, #joke-tile p, #advice-tile p {
     text-align: center;
@@ -341,4 +347,8 @@ h1 {
     width: 100%;
     color: black;
     left: 2em;
+}
+.section-title {
+    font-size: 40px;
+    font-family: "Bodoni MT";
 }
