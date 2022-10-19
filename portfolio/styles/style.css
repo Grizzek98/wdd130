@@ -92,7 +92,7 @@ footer a:hover {
     grid-column: 1/5;
     grid-row: 1/2;
     font-size: 60px;
-    font-family: "Bodoni MT", Lucida Bright, Georgia, Garamond;
+    font-family: "Bodoni MT", "Lucida Bright", Georgia, Garamond;
 }
 #homeimg1, #asteroidimg1, #asteroidimg2 {
     width: 90%;
@@ -237,7 +237,7 @@ footer a:hover {
 /* jokes stuff */
 #jokes-grid {
     display: grid;
-    grid-template-columns: minmax(auto, 300px, auto) 1fr 1fr 1fr;
+    grid-template-columns: minmax(400px, auto) 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
     text-align: center;
