@@ -241,7 +241,6 @@ footer a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* margin-top: 5em; */
 }
 .jokes-title {
     grid-column: 2/3;

@@ -19,14 +19,14 @@ async function fetchAPI(api, options = null) {
 // change to insult stuff when api is working
 async function getJoke() {
     const data = await fetchAPI(jokeAPI, jokeOptions);
-    console.log(data['body']['0']['setup']);
-    console.log(data['body']['0']['punchline']);
+    // console.log(data['body']['0']['setup']);
+    // console.log(data['body']['0']['punchline']);
     document.querySelector('#joke-title').innerHTML = data['body']['0']['setup'] + '\n' + data['body']['0']['punchline'];
 }
 
 async function getAdvice() {
     const data = await fetchAPI(adviceAPI);
-    console.log(data['slip']['advice']);
+    // console.log(data['slip']['advice']);
     document.querySelector('#advice-title').innerHTML = data['slip']['advice'];
 }
 
